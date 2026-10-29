@@ -1,6 +1,5 @@
 import cv2
 import numpy as np
-import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 
 def brightness_model_poly(phi, a0, a1, a2, a3, a4, a5=0):

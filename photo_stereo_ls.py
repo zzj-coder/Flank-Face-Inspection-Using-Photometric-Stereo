@@ -109,5 +109,5 @@ if __name__ == "__main__":
 
     theta = suppress_mask_area(theta, mask)
     slope = np.tan(theta) * resample_pixelToMM * 1000
-    height_map = reconstruct_height_from_xgradient(slope, vertical_weight=0.01, reg_lambda=2e-6, laplacian_weight=0.01)
+    height_map = reconstruct_height_from_xgradient(slope, vertical_weight=0.01, reg_lambda=2e-6, laplacian_weight=0.0)
     
